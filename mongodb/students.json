@@ -1,0 +1,38 @@
+[
+	{
+		"fname": "Sue",
+		"lname": "Smith",
+		"program": "IPD",
+		"email": "fake@gmail.com",
+		"courses": [
+			{
+				"title": "MMED",
+				"number": "1006"
+			}
+		]
+	},
+	{
+		"fname": "Randy",
+		"lname": "Jones",
+		"program": "IPD",
+		"email": "fake@gmail.com",
+		"courses": [
+			{
+				"title": "Interactive Story and Concept",
+				"number": "MMED 6002"
+			}
+		]
+	},
+	{
+		"fname": "Peter",
+		"lname": "Petrelli",
+		"program": "IMS",
+		"email": "pete@gmail.com",
+		"courses": [
+			{
+				"title": "IMS",
+				"number": "6009"
+			}
+		]
+	}
+]

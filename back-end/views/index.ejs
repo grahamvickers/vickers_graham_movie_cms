@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+
+
+    <p><h1><%= title %></h1></p>
+    <% let counter = 0 %>
+    <p><h2>Welcome to the <%= title %></h2></p>
+    <p><ul>
+    <% for (var i =0; i < students.length; i++) { %>
+      <li><a href="http://localhost:3002/api/student/<%= students[i]._id %>"><%= students[i].fname + ' ' + students[i].lname %></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://localhost:3002/api/student/delete/<%= students[i]._id %>">delete</a>
+      </li>
+   <% } %>
+  </ul></p>
+
+  <p>
+    <h3>Add a new student:</h3>
+    <form method="post" action="http://localhost:3002/api/student/new">
+
+      <label for="fname">First Name:</label>
+      <input id="fname" name="fname" placeholder="ex. Sleepy" type="text">
+
+      <label for="lname">Last Name:</label>
+      <input id="lname" name="lname" placeholder="ex. Joe" type="text">
+
+      <label for="program">Program:</label>
+      <input id="program" name="program" placeholder="ex. IDP" type="text">
+
+      <label for="email">Email:</label>
+      <input id="email" name="email" placeholder="ex. sleepyjoe@example.com" type="email">
+    
+      <input type="submit" value="add">
+
+    </form>
+
+  </p>
+  <script src="myjs.js"></script>
+  </body>
+
+</html>
