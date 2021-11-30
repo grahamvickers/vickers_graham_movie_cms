@@ -1,0 +1,114 @@
+.hidden {
+  display: none;
+}
+
+main {
+  padding: 40px 60px 40px 60px;
+}
+
+h2 {
+  font-family: sinter, sans-serif;
+  font-size: 42px;
+  color: #2f2f2f;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: sinter, sans-serif;
+  font-size: 18px;
+  color: #2f2f2f;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  font-family: sinter, sans-serif;
+  font-size: 18px;
+  color: #2f2f2f;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+
+#headCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #f3f3f3;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+#headCon img {
+  width: 200px;
+}
+
+#mainNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#mainNav a:hover {
+  color: #d8782d;
+}
+
+#moviesContainer {
+  margin-top: 40px;
+}
+
+.movieCon {
+  background-color: #f3f3f3;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 180px;
+}
+
+.movieCon img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.movieCon a {
+  text-decoration: none;
+  font-family: sinter, sans-serif;
+  font-size: 18px;
+  color: #2f2f2f;
+  font-weight: 400;
+  font-style: normal;
+  width: 150px;
+  line-height: 24px;
+}
+
+.movieCon:hover {
+  cursor: pointer;
+}
+
+#footerCon {
+  padding: 30px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+/*# sourceMappingURL=main.css.map */

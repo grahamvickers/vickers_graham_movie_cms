@@ -2,10 +2,10 @@
 
 var mongoose = require('mongoose');
 
-var MoviesSchema = new mongoose.Schema({
+var MovieSchema = new mongoose.Schema({
   title: {
     type:String,
-    required:[true, 'A title is required.']
+    required:[true, 'A title for the movie is required.']
   },
   director: String,
   bio: String,
@@ -15,7 +15,10 @@ var MoviesSchema = new mongoose.Schema({
   genre: String,
   rated: String,
   time: String,
-  rating: String,
-});
+  rating: Number
+},
+{collection:"movies"}
 
-module.exports = mongoose.model('Movies', MoviesSchema);
+);
+
+module.exports = mongoose.model('Movie', MovieSchema);
