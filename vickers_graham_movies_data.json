@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Pulp Fiction",
+        "director": "Quinton Tarantino",
+        "bio": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+        "cover": "pulp_fiction.jpg",
+        "thumbnail": "pulp_fiction_th.jpg",
+        "year": "1994", 
+        "rated": "R",
+        "genre": "crime",
+        "time": "2h 34m",
+        "rating": "8.9"
+    }
+]

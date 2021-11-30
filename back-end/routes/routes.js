@@ -3,57 +3,56 @@ var path = require('path'); //had to add
 var router = express.Router();
 
 var mongoose = require('mongoose');
-var Student = require('../models/Student.js');
-var Employer = require('../models/Employer.js');
+var Movie = require('../models/Movies.js');
 
 
-router.get('/api/students', function(req, res, next) {
-  Student.find(function (err, students) {
+router.get('/api/movies', function(req, res, next) {
+  Movie.find(function (err, movies) {
     if (err) return next(err);
-	res.json(students);
+    res.json(movies);
   });
 });
 
 
-router.get('/api/students/list', function(req, res, next) {
-  Student.find(function (err, students) {
+router.get('/api/movies/list', function(req, res, next) {
+  Movie.find(function (err, movies) {
     if (err) return next(err);
-    res.render('index', { title: 'Class List', students:students });
+    res.render('index', { title: 'Movie List', movies:movies });
   });
 });
 
-router.get('/api/students/sorted', function(req, res, next) {
-  Student.find({}).sort({'lname': 1}).exec(function (err, students) {
+router.get('/api/movies/sorted', function(req, res, next) {
+  Movie.find({}).sort({'title': 1}).exec(function (err, movies) {
     if (err) return next(err);
-    res.render('index', { title: 'Student Sorted', students:students });
+    res.render('index', { title: 'Movies Sorted', movies:movies });
   });
 });
 
-router.get('/api/student/:id', function(req, res, next) {
- Student.findById(req.params.id, function (err, student) {
+router.get('/api/movie/:id', function(req, res, next) {
+ Movie.findById(req.params.id, function (err, movie) {
     if (err) return next(err);
-    // res.json(student);
-    res.render('details', { title: 'Student Details', student });
+    // res.json(movie);
+    res.render('details', { title: 'Movie Details', movie });
 
   });
 });
 
-router.post('/api/student/new', function(req, res, next) {
-  Student.create(req.body, function (err, student) {
+router.post('/api/movie/new', function(req, res, next) {
+  Movie.create(req.body, function (err, movie) {
     if (err) return next(err);
-    res.redirect('/api/students/sorted');
+    res.redirect('/api/movies/sorted');
   });
 });
 
-router.get('/api/student/delete/:id', function(req, res, next) {
-  Student.findByIdAndDelete(req.params.id, function (err, post) {
+router.get('/api/movie/delete/:id', function(req, res, next) {
+  Movie.findByIdAndDelete(req.params.id, function (err, post) {
     if (err) return next(err);
-    res.redirect('/api/students/sorted');
+    res.redirect('/api/movies/sorted');
   });
 });
 
 router.post('/', function(req, res, next) {
-  Student.create('sample', function (err, post) {
+  Movie.create('sample', function (err, post) {
     if (err) return next(err);
     //res.json(post);
   });
@@ -77,12 +76,6 @@ router.delete('/:id', function(req, res, next) {
 });
 
 
-router.get('/api/employers', function(req, res, next) {
-  Employer.find(function (err, employers) {
-    if (err) return next(err);
-	res.json(employers);
-  });
-});
 
 
 module.exports = router;

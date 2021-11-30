@@ -10,7 +10,7 @@ var routes = require('./routes/routes');
 
 //Need to add mongoose DB info
 var mongoose = require('mongoose'),
-    mongoConnectURL = process.env.MONGO_CONNECT_URL || 'mongodb://localhost/studentdb2021';
+    mongoConnectURL = process.env.MONGO_CONNECT_URL || 'mongodb://localhost/db_movies';
 mongoose.connect(mongoConnectURL, {
   seNewUrlParser: true,
   useUnifiedTopology: true,
