@@ -1,0 +1,94 @@
+// Any main body or hiding variables
+.hidden{
+    display: none;
+}
+
+main{
+    padding: 40px 60px 40px 60px;
+}
+
+// all font settings below 
+
+h2{
+    font-family: sinter, sans-serif;
+    font-size: 42px;
+    color: #2f2f2f;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+p{
+    font-family: sinter, sans-serif;
+    font-size: 18px;
+    color: #2f2f2f;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    font-family: sinter, sans-serif;
+    font-size: 18px;
+    color: #2f2f2f;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+// all main/ body settings
+#headCon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f3f3f3;
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    img{
+        width: 200px;
+    }
+}
+
+#mainNav ul{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    justify-content: space-between; 
+}
+
+#mainNav a:hover{
+    color: rgb(216,120,45);
+}
+
+#moviesContainer{
+    margin-top: 40px;
+}
+.movieCon{
+    background-color: #f3f3f3;;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    img{
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        font-family: sinter, sans-serif;
+        font-size: 18px;
+        color: #2f2f2f;
+        font-weight: 400;
+        font-style: normal;
+        width: 150px;
+        line-height: 24px;
+    }&:hover{
+        cursor: pointer;
+    }
+}
+
+
+#footerCon{
+    padding: 30px;
+    align-content: center;
+}
+  

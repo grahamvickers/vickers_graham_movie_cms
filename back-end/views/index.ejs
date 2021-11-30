@@ -1,25 +1,25 @@
 <%- include('partials/header') %>
 
 
-    <p><h1><%= title %></h1></p>
-    <% let counter = 0 %>
-    <p><h2>Welcome to the <%= title %></h2></p>
-    <p><ul>
+<% let counter = 0 %>
+<h2>Welcome to the <%= title %></h2>
+<section>
+<h2 class="hidden">Movies Display</h2>
+<div id="moviesContainer">
+  <ul>
     <% for (var i =0; i < movies.length; i++) { %>
-      <li>
+      <li class="movieCon">
         <a href="http://localhost:3002/api/movie/<%= movies[i]._id %>">
-          <%= movies[i].title + ' ' + movies[i].bio %>
-        </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="http://localhost:3002/api/movie/delete/<%= movies[i]._id %>">
-          delete
+          <img src="/images/<%= movies[i].thumbnail %>" alt="<%= movies[i].title %> cover">
+          <p><%= movies[i].title + ', by ' + movies[i].director %></p>
         </a>
       </li>
-   <% } %>
-  </ul></p>
+    <% } %>
+  </ul>
+</div>
+</section>
 
   
   <script src="myjs.js"></script>
-  </body>
-
-</html>
+ 
+  <%- include('partials/footer') %>

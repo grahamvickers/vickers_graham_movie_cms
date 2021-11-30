@@ -22,7 +22,7 @@ router.get('/api/movies/list', function(req, res, next) {
 });
 
 router.get('/api/movies/sorted', function(req, res, next) {
-  Movie.find({}).sort({'title': 1}).exec(function (err, movies) {
+  Movie.find({}).sort({'rating': 1}).exec(function (err, movies) {
     if (err) return next(err);
     res.render('index', { title: 'Movies Sorted', movies:movies });
   });
@@ -62,14 +62,14 @@ router.post('/', function(req, res, next) {
 // 'fill in' a copy of the create form (the same form and fields) with tbl variables
 // submit the form via post and do the update
 router.put('/:id', function(req, res, next) {
-  Student.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
+  Movie.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
 });
 
 router.delete('/:id', function(req, res, next) {
-  Student.findByIdAndRemove(req.params.id, req.body, function (err, post) {
+  Movie.findByIdAndRemove(req.params.id, req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
