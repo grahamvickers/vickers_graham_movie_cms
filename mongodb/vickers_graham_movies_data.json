@@ -1,0 +1,136 @@
+[
+    {
+        "title": "Pulp Fiction",
+        "director": "Quinton Tarantino",
+        "bio": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+        "cover": "pulp_fiction.jpg",
+        "thumbnail": "pulp_fiction_th.jpg",
+        "year": "1994", 
+        "rated": "R",
+        "genre": "crime",
+        "time": "2h 34m",
+        "rating": "8.9"
+    },
+
+    {
+        "title": "Fight Club",
+        "director": "David Fincher",
+        "bio": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+        "cover": "fight_club.jpg",
+        "thumbnail": "fight_club_th.jpg",
+        "year": "1999", 
+        "rated": "R",
+        "genre": "Drama",
+        "time": "2h 19m",
+        "rating": "8.8"
+    },
+
+    {
+        "title": "Inception",
+        "director": "Christopher Nolan",
+        "bio": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+        "cover": "inception.jpg",
+        "thumbnail": "inception_th.jpg",
+        "year": "2010", 
+        "rated": "PG-13",
+        "genre": "Action",
+        "time": "2h 28m",
+        "rating": "8.8"
+    },
+    {
+        "title": "Goodfellas",
+        "director": "Martin Scorsese",
+        "bio": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+        "cover": "goodfellas.jpg",
+        "thumbnail": "goodfellas_th.jpg",
+        "year": "1990", 
+        "rated": "R",
+        "genre": "Crime",
+        "time": "2h 26m",
+        "rating": "8.7"
+    }, 
+    {
+        "title": "The Matrix",
+        "director": "Lana & Lilly Wachowski",
+        "bio": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+        "cover": "matrix.jpg",
+        "thumbnail": "matrix_th.jpg",
+        "year": "1999", 
+        "rated": "R",
+        "genre": "Action",
+        "time": "2h 16m",
+        "rating": "8.7"
+    }, 
+    {
+        "title": "",
+        "director": "",
+        "bio": "",
+        "cover": ".jpg",
+        "thumbnail": "_th.jpg",
+        "year": "", 
+        "rated": "",
+        "genre": "",
+        "time": "",
+        "rating": ""
+    },
+    {
+        "title": "",
+        "director": "",
+        "bio": "",
+        "cover": ".jpg",
+        "thumbnail": "_th.jpg",
+        "year": "", 
+        "rated": "",
+        "genre": "",
+        "time": "",
+        "rating": ""
+    }, 
+    {
+        "title": "",
+        "director": "",
+        "bio": "",
+        "cover": ".jpg",
+        "thumbnail": "_th.jpg",
+        "year": "", 
+        "rated": "",
+        "genre": "",
+        "time": "",
+        "rating": ""
+    },
+    {
+        "title": "",
+        "director": "",
+        "bio": "",
+        "cover": ".jpg",
+        "thumbnail": "_th.jpg",
+        "year": "", 
+        "rated": "",
+        "genre": "",
+        "time": "",
+        "rating": ""
+    },
+    {
+        "title": "",
+        "director": "",
+        "bio": "",
+        "cover": ".jpg",
+        "thumbnail": "_th.jpg",
+        "year": "", 
+        "rated": "",
+        "genre": "",
+        "time": "",
+        "rating": ""
+    }, 
+    {
+        "title": "",
+        "director": "",
+        "bio": "",
+        "cover": ".jpg",
+        "thumbnail": "_th.jpg",
+        "year": "", 
+        "rated": "",
+        "genre": "",
+        "time": "",
+        "rating": ""
+    }
+]
