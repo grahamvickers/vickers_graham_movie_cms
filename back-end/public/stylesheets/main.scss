@@ -61,13 +61,19 @@ a{
 
 #moviesContainer{
     margin-top: 40px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .movieCon{
     background-color: #f3f3f3;;
     padding: 20px;
     display: flex;
     justify-content: center;
     width: 180px;
+    margin: 20px;
     img{
         width: 150px;
         margin-bottom: 20px;
@@ -86,9 +92,58 @@ a{
     }
 }
 
+#detailsCon{
+    background: #f3f3f3;
+    padding: 30px 40px 30px 40px;
+    display: flex;
+    flex-direction: row;
+    
+    div{
+        margin-right: 40px;
+    }
+    img{
+        margin-top: 20px;
+    }
+}
+
+#details{
+    list-style: none;
+    text-decoration: none;
+    margin-top: 60px;
+    li p{
+        margin-bottom: 15px;
+    }
+}
+
+#bio{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    a{
+        background: rgb(216,120,45);
+        padding: 10px 20px 10px 20px ;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        margin-right: 40px;
+        margin-left: 40px;
+
+    }
+}
+
 
 #footerCon{
     padding: 30px;
-    align-content: center;
+    background: #2f2f2f;
+    p{
+        color: #f3f3f3;
+        font-size: 16px;
+    }
 }
   

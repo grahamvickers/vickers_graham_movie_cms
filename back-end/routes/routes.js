@@ -37,6 +37,15 @@ router.get('/api/movie/:id', function(req, res, next) {
   });
 });
 
+
+router.get('/api/movie/create', function(req, res, next) {
+  Movie.find(function (err, movies) {
+    if (err) return next(err);
+    res.render('create', { title: 'Create Movie' });
+  });
+});
+
+
 router.post('/api/movie/new', function(req, res, next) {
   Movie.create(req.body, function (err, movie) {
     if (err) return next(err);

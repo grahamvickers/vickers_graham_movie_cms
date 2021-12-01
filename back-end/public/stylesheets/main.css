@@ -72,6 +72,18 @@ a {
 
 #moviesContainer {
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .movieCon {
@@ -84,6 +96,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 180px;
+  margin: 20px;
 }
 
 .movieCon img {
@@ -106,9 +119,72 @@ a {
   cursor: pointer;
 }
 
+#detailsCon {
+  background: #f3f3f3;
+  padding: 30px 40px 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#detailsCon div {
+  margin-right: 40px;
+}
+
+#detailsCon img {
+  margin-top: 20px;
+}
+
+#details {
+  list-style: none;
+  text-decoration: none;
+  margin-top: 60px;
+}
+
+#details li p {
+  margin-bottom: 15px;
+}
+
+#bio {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+#actions a {
+  background: #d8782d;
+  padding: 10px 20px 10px 20px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
 #footerCon {
   padding: 30px;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  background: #2f2f2f;
+}
+
+#footerCon p {
+  color: #f3f3f3;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
