@@ -1,9 +1,27 @@
 <%- include('partials/header') %>
 
-   <h2>HELLOOOOO</h2>
+  <section id="detailsCon">
+    <div>
+      <h2><%= movie.title %></h2>
+      <img src="/images/<%= movie.cover %>" alt="<%= movie.title %> cover">
+    </div>
 
-   <p><%= movie.title %></p>
+    <u id="details">
+      <li><p id="bio"><%= movie.bio %></p></li>
+      <li><p>Directed by: <%= movie.director %></p></li>
+      <li><p>Released: <%= movie.year %></p></li>
+      <li><p>Rated: <%= movie.rated %></p></li>
+      <li><p>Run time: <%= movie.time %></p></li>
+      <li><p>Popularity: <%= movie.rating %> / 10</p></li>
 
+    </ul>
+  </section>
+  <section id="actions">
+    <h2 class="hidden">Actions</h2>
+    <a href="http://localhost:3002/api/movie/delete/<%= movie._id %>">REMOVE</a>
+    <a href="#">EDIT</a>
+
+  </section>
   <script src="myjs.js"></script>
 
   <%- include('partials/footer') %>
