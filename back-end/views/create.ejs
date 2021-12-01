@@ -1,20 +1,41 @@
 <%- include('partials/header') %>
 
 <section>
-    <h3>Add a new movie:</h3>
-    <form method="post" action="http://localhost:3002/api/movie/new">
+    <h2>Add a new movie:</h2>
+    <form 
+        method="post" 
+        action="http://localhost:3002/api/movie/new"
+    >
 
-        <label for="fname">First Name:</label>
-        <input id="fname" name="fname" placeholder="ex. Sleepy" type="text">
+        <label for="title">Title:</label>
+        <input id="title" name="title" placeholder="ex. 40 Year Old Virgin" type="text">
 
-        <label for="lname">Last Name:</label>
-        <input id="lname" name="lname" placeholder="ex. Joe" type="text">
+        <label for="director">Director:</label>
+        <input id="director" name="director" placeholder="ex. Seth Rogan" type="text">
 
-        <label for="program">Program:</label>
-        <input id="program" name="program" placeholder="ex. IDP" type="text">
+        <label for="bio">Bio:</label>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="ex. a cool bio about this super lame movie"></textarea>
+        
+        <label for="year">Year:</label>
+        <input id="year" name="year" placeholder="ex. 1998" type="text">
 
-        <label for="email">Email:</label>
-        <input id="email" name="email" placeholder="ex. sleepyjoe@example.com" type="email">
+        <label for="genre">Genre:</label>
+        <input id="genre" name="genre" placeholder="ex. Drama" type="text">
+
+        <label for="time">Run Time:</label>
+        <input id="time" name="time" placeholder="ex. 2h 12m" type="text">
+        
+        <label for="rated">Rated:</label>
+        <input id="rated" name="rated" placeholder="ex. R" type="text">
+
+        <label for="rating">Rating:</label>
+        <input id="rating" name="rating" placeholder="ex. 6.2" type="text">
+
+        <label for="cover">Cover:</label>
+        <input id="cover" name="cover" placeholder="ex. harry_potter.jpg" type="text">
+
+        <label for="thumbnail">Thumbnail:</label>
+        <input id="thumbnail" name="thumbnail" placeholder="ex. 6.2" type="text">
 
         <input type="submit" value="add">
 

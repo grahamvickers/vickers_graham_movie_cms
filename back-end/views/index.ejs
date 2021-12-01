@@ -4,22 +4,11 @@
 <% let counter = 0 %>
 <h2>Welcome to the <%= title %></h2>
 <section>
-  <h2 class="hidden">Movies Display</h2>
-  <div >
-    <ul id="moviesContainer">
-      <% for (var i =0; i < movies.length; i++) { %>
-        <li class="movieCon">
-          <a href="http://localhost:3002/api/movie/<%= movies[i]._id %>">
-            <img src="/images/<%= movies[i].thumbnail %>" alt="<%= movies[i].title %> cover">
-            <p><%= movies[i].title + ', by ' + movies[i].director %></p>
-          </a>
-        </li>
-      <% } %>
-    </ul>
-  </div>
+  <p>THIS IS A SUPER FUN PROJECT I WORKED OON USING THE FOLLOWING LANGUAGES:</p>
+  <li><a href="/api/movies/list">LIST</a></li>
+
 </section>
 
   
-  <script src="myjs.js"></script>
  
   <%- include('partials/footer') %>

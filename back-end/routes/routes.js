@@ -5,6 +5,9 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Movie = require('../models/Movies.js');
 
+router.get('/', function(req, res, next){
+  res.render('index', {title: 'Welcome'})
+});
 
 router.get('/api/movies', function(req, res, next) {
   Movie.find(function (err, movies) {
@@ -17,14 +20,14 @@ router.get('/api/movies', function(req, res, next) {
 router.get('/api/movies/list', function(req, res, next) {
   Movie.find(function (err, movies) {
     if (err) return next(err);
-    res.render('index', { title: 'Movie List', movies:movies });
+    res.render('list', { title: 'Movie List', movies:movies });
   });
 });
 
 router.get('/api/movies/sorted', function(req, res, next) {
   Movie.find({}).sort({'rating': 1}).exec(function (err, movies) {
     if (err) return next(err);
-    res.render('index', { title: 'Movies Sorted', movies:movies });
+    res.render('list', { title: 'Movies Sorted', movies:movies });
   });
 });
 
@@ -38,34 +41,31 @@ router.get('/api/movie/:id', function(req, res, next) {
 });
 
 
-router.get('/api/movie/create', function(req, res, next) {
-  Movie.find(function (err, movies) {
-    if (err) return next(err);
-    res.render('create', { title: 'Create Movie' });
-  });
+router.get('/create', function(req, res, next) {
+    res.render('create', { title: 'Create Movie'});
 });
 
 
 router.post('/api/movie/new', function(req, res, next) {
   Movie.create(req.body, function (err, movie) {
     if (err) return next(err);
-    res.redirect('/api/movies/sorted');
+    res.redirect('/api/movies/list');
   });
 });
 
 router.get('/api/movie/delete/:id', function(req, res, next) {
   Movie.findByIdAndDelete(req.params.id, function (err, post) {
     if (err) return next(err);
-    res.redirect('/api/movies/sorted');
+    res.redirect('/api/movies/list');
   });
 });
 
-router.post('/', function(req, res, next) {
-  Movie.create('sample', function (err, post) {
-    if (err) return next(err);
-    //res.json(post);
-  });
-});
+// router.post('/', function(req, res, next) {
+//   Movie.create('sample', function (err, post) {
+//     if (err) return next(err);
+//     //res.json(post);
+//   });
+// });
 
 // pull the specific document/ row using _id 
 // 'fill in' a copy of the create form (the same form and fields) with tbl variables
