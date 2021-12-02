@@ -2,22 +2,32 @@
 
 
 <% let counter = 0 %>
-<h2>Welcome to the <%= title %></h2>
+<h2><%= title %></h2>
 <section>
-  <li><a href="/api/movies/sorted">FILTER</a></li>
-  <h2 class="hidden">Movies Display</h2>
-  <div >
-    <ul id="moviesContainer">
-      <% for (var i =0; i < movies.length; i++) { %>
-        <li class="movieCon">
-          <a href="http://localhost:3002/api/movie/<%= movies[i]._id %>">
-            <img src="/images/<%= movies[i].thumbnail %>" alt="<%= movies[i].title %> cover">
-            <p><%= movies[i].title + ', by ' + movies[i].director %></p>
-          </a>
-        </li>
-      <% } %>
-    </ul>
-  </div>
+    <select name="filters" id="filter" onchange="location = this.value;">
+        <option value="#">Select:</option>
+        <option value="/api/movies/list">Default</option>
+        <option value="/api/movies/sorted/a-z">Title A-Z</option>
+        <option value="#">Title Z-A</option>
+        <option value="#">Director A-Z</option>
+        <option value="#">Director Z-A</option>
+        <option value="#">Rating 1-10</option>
+        <option value="#">Rating 10-1</option>
+
+    </select>
+    <h2 class="hidden">Movies Display</h2>
+    <div >
+        <ul id="moviesContainer">
+        <% for (var i =0; i < movies.length; i++) { %>
+            <li class="movieCon">
+            <a href="http://localhost:3002/api/movie/<%= movies[i]._id %>">
+                <img src="/images/<%= movies[i].thumbnail %>" alt="<%= movies[i].title %> cover">
+                <p><%= movies[i].title + ', by ' + movies[i].director %></p>
+            </a>
+            </li>
+        <% } %>
+        </ul>
+    </div>
 </section>
 
   

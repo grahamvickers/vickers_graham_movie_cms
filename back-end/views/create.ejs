@@ -2,7 +2,7 @@
 
 <section>
     <h2>Add a new movie:</h2>
-    <form 
+    <form id="createForm"
         method="post" 
         action="http://localhost:3002/api/movie/new"
     >
@@ -14,7 +14,7 @@
         <input id="director" name="director" placeholder="ex. Seth Rogan" type="text">
 
         <label for="bio">Bio:</label>
-        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="ex. a cool bio about this super lame movie"></textarea>
+        <textarea name="bio" id="bio" cols="20" rows="3" placeholder="ex. a cool bio about this super lame movie"></textarea>
         
         <label for="year">Year:</label>
         <input id="year" name="year" placeholder="ex. 1998" type="text">
@@ -37,7 +37,7 @@
         <label for="thumbnail">Thumbnail:</label>
         <input id="thumbnail" name="thumbnail" placeholder="ex. 6.2" type="text">
 
-        <input type="submit" value="add">
+        <input type="submit" value="CREATE MOVIE" id="submit">
 
     </form>
 

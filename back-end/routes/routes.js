@@ -20,14 +20,14 @@ router.get('/api/movies', function(req, res, next) {
 router.get('/api/movies/list', function(req, res, next) {
   Movie.find(function (err, movies) {
     if (err) return next(err);
-    res.render('list', { title: 'Movie List', movies:movies });
+    res.render('list', { title: 'Showing All Movies', movies:movies });
   });
 });
 
-router.get('/api/movies/sorted', function(req, res, next) {
-  Movie.find({}).sort({'rating': 1}).exec(function (err, movies) {
+router.get('/api/movies/sorted/a-z', function(req, res, next) {
+  Movie.find({}).sort({'title': 1}).exec(function (err, movies) {
     if (err) return next(err);
-    res.render('list', { title: 'Movies Sorted', movies:movies });
+    res.render('list', { title: 'Movies Sorted: A-Z', movies:movies });
   });
 });
 
