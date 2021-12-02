@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-mongoimport --jsonArray -d ${MONGO_INITDB_DATABASE} -c students --file /docker-entrypoint-initdb.d/vickers_graham_movies_data.json
+mongoimport --jsonArray -d ${MONGO_INITDB_DATABASE} -c movies --file /docker-entrypoint-initdb.d/vickers_graham_movies_data.json
 
 mongo <<EOF
 use $MONGO_INITDB_DATABASE
