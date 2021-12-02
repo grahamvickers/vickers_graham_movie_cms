@@ -29,6 +29,14 @@ p {
   font-style: normal;
 }
 
+label {
+  font-family: sinter, sans-serif;
+  font-size: 18px;
+  color: #2f2f2f;
+  font-weight: 400;
+  font-style: normal;
+}
+
 a {
   font-family: sinter, sans-serif;
   font-size: 18px;
@@ -180,7 +188,7 @@ select {
 }
 
 #detailsCon {
-  background: #f3f3f3;
+  background: #f3f3f3e2;
   padding: 30px 40px 30px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,6 +197,8 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 #detailsCon div {

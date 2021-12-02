@@ -7,15 +7,42 @@ var MovieSchema = new mongoose.Schema({
     type:String,
     required:[true, 'A title for the movie is required.']
   },
-  director: String,
-  bio: String,
-  cover: String,
-  thumbnail: String,
-  year: String,
-  genre: String,
-  rated: String,
-  time: String,
-  rating: Number
+  director:{
+    type:String,
+    required:[true, 'A director for the movie is required.']
+  },
+  bio: {
+    type:String,
+    required:[true, 'A bio for the movie is required.']
+  },
+  cover:{
+    type:String,
+    required:[true, 'A cover for the movie is required.']
+  },
+  thumbnail: {
+    type:String,
+    required:[true, 'A thumbnail for the movie is required.']
+  },
+  year: {
+    type:String,
+    required:[true, 'A year for the movie is required.']
+  },
+  genre: {
+    type:String,
+    required:[true, 'A genre for the movie is required.']
+  },
+  rated: {
+    type:String,
+    required:[true, 'A audience rating for the movie is required.']
+  },
+  time: {
+    type:String,
+    required:[true, 'A run time for the movie is required.']
+  },
+  rating: {
+    type:Number,
+    required:[true, 'A rating for the movie is required.']
+  },
 },
 {collection:"movies"}
 
