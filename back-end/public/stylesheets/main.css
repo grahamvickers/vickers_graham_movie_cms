@@ -58,6 +58,8 @@ a {
 }
 
 #landing h2 {
+  font-weight: 800;
+  font-size: 48px;
   color: #d8782d;
   margin-bottom: 30px;
 }
@@ -65,15 +67,32 @@ a {
 #landing p {
   margin-bottom: 20px;
   line-height: 24px;
-}
-
-#landing p:nth-child(odd) {
-  font-size: 24px !important;
-  line-height: 32px;
   margin-bottom: 40px;
 }
 
+#landing p:nth-child(even) {
+  font-size: 24px !important;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
 #landing a {
+  background: #d8782d;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+#error {
+  margin-top: 40px;
+  margin-bottom: 40px;
   background: #d8782d;
   padding: 10px 20px 10px 20px;
   border-radius: 5px;
@@ -221,6 +240,10 @@ select {
           flex-direction: row;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+#detailsCon h2 {
+  width: 260px;
 }
 
 #detailsCon div {
