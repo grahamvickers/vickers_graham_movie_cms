@@ -79,7 +79,8 @@ a{
     a{
         background: rgb(216,120,45);
         padding: 10px 20px 10px 20px ;
-        width: 100px;
+        border-radius: 5px;
+        width: 120px;
         display: flex;
         justify-content: center;
         border: none;
@@ -122,9 +123,11 @@ a{
 select{
     margin-top: 20px;
     width: 120px; 
-    border: 1px solid rgb(216,120,45);
+    border: 2px solid rgb(216,120,45);
+    padding: 3px;
+    border-radius: 5px;
     font-family: sinter, sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         color: #2f2f2f;
         font-weight: 400;
         font-style: normal;
@@ -140,6 +143,7 @@ select{
 
 .movieCon{
     background-color: #f3f3f3;
+
     border-radius: 5px;
     padding: 20px;
     display: flex;
@@ -165,6 +169,7 @@ select{
 
 .movieCon:hover{
     background-color: rgba(216, 119, 45, 0.845);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
 
 }
 
