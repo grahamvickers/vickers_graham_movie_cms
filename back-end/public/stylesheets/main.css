@@ -171,10 +171,10 @@ select {
   color: #2f2f2f;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 40px;
 }
 
 #moviesContainer {
-  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

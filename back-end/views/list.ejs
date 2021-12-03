@@ -2,8 +2,9 @@
 
 
 <% let counter = 0 %>
-<h2><%= title %></h2>
-<section>
+
+<div>
+    <h2><%= title %></h2>
     <label for="filter">Filter Movies:</label>
     <select name="filters" id="filter" onchange="location = this.value;">
         <option value="/api/movies/list" selected>Select Filter:</option>
@@ -14,8 +15,11 @@
         <option value="#">Director Z-A</option>
         <option value="#">Rating 1-10</option>
         <option value="#">Rating 10-1</option>
-
+    
     </select>
+</div>
+<section>
+
     <h2 class="hidden">Movies Display</h2>
     <div >
         <ul id="moviesContainer">
