@@ -294,6 +294,15 @@ select {
   margin-left: 40px;
 }
 
+#create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #createForm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,7 +311,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 700px;
+  width: 600px;
   font-family: sinter, sans-serif;
   font-size: 18px !important;
   color: #2f2f2f;
@@ -318,7 +327,6 @@ select {
   margin-bottom: 30px;
   line-height: 56px;
   border-bottom: 1px solid #2f2f2f;
-  max-width: 460px;
 }
 
 textarea, input {
