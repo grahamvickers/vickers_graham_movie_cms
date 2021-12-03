@@ -76,7 +76,8 @@ a {
 #landing a {
   background: #d8782d;
   padding: 10px 20px 10px 20px;
-  width: 100px;
+  border-radius: 5px;
+  width: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,9 +144,11 @@ a {
 select {
   margin-top: 20px;
   width: 120px;
-  border: 1px solid #d8782d;
+  border: 2px solid #d8782d;
+  padding: 3px;
+  border-radius: 5px;
   font-family: sinter, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #2f2f2f;
   font-weight: 400;
   font-style: normal;
@@ -201,6 +204,8 @@ select {
 
 .movieCon:hover {
   background-color: rgba(216, 119, 45, 0.845);
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
 }
 
 #detailsCon {
