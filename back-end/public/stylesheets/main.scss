@@ -87,6 +87,15 @@ a{
 
 }
 
+#landingCon{
+    display: flex;
+    flex-direction: row;
+    img{
+        max-height: 400px;
+        margin-left: 80px;
+    }
+}
+
 #headCon{
     display: flex;
     flex-direction: row;

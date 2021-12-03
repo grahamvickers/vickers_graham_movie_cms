@@ -86,6 +86,21 @@ a {
   border: none;
 }
 
+#landingCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#landingCon img {
+  max-height: 400px;
+  margin-left: 80px;
+}
+
 #headCon {
   display: -webkit-box;
   display: -ms-flexbox;
